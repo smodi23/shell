@@ -1,6 +1,5 @@
 #!/bin/bash
 set -x
-
 ############################################
 # DSI CONSULTING INC. Project setup script #
 ############################################
@@ -8,21 +7,17 @@ set -x
 # for a new project. It also creates a README file with the
 # project name and a brief description of the project.
 # Then it unzips the raw data provided by the client.
-
 mkdir analysis output
 touch README.md
+echo "# Project Name: DSI Consulting Inc." > README.md
 touch analysis/main.py
-
 # download client data
 curl -Lo rawdata.zip https://github.com/UofT-DSI/shell/raw/refs/heads/main/02_activities/assignments/rawdata.zip
 unzip -q rawdata.zip
-
 ###########################################
 # Complete assignment here
-
 # 1. Create a directory named data
 mkdir data
-
 # 2. Move the ./rawdata directory to ./data/raw
 mv ./rawdata ./data/raw
 
