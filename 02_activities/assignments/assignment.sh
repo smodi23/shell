@@ -4,7 +4,6 @@ set -x
 ############################################
 # DSI CONSULTING INC. Project setup script #
 ############################################
-
 # This script creates standard analysis and output directories
 # for a new project. It also creates a README file with the
 # project name and a brief description of the project.
@@ -12,7 +11,6 @@ set -x
 
 mkdir analysis output
 touch README.md
-echo "# Project Name: DSI Consulting Inc." > README.md
 touch analysis/main.py
 
 # download client data
